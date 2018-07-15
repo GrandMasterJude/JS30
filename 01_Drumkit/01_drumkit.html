@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link href="../JudeMcCulley/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="01_drumkit/style.css">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #2d4061;">
+    <a class="navbar-brand" href="../AboutMe.html">About Me</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="../default.html">My Projects</a>
+        <a class="nav-item nav-link" href="../Resume.pdf">Resume</a>
+        <a class="nav-item nav-link" href="https://github.com/GrandMasterJude">Github</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">uhh</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">tatsu</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">shoryuken</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">hadoken</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">punch</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">kick</span>
+    </div>
+  </div>
+  
+  
+    <div class="characters">
+      <img src="01_drumkit/sprites/ryu-stance.gif"  width="auto" height="300px"  id="ryu">  <!-- Maybe do some dynamic styling for each key? -->
+    </div>
+
+
+
+  <audio data-key="65" src="01_drumkit/sounds/uhh.wav"></audio>
+  <audio data-key="83" src="01_drumkit/sounds/tatsu.wav"></audio>
+  <audio data-key="68" src="01_drumkit/sounds/shoryuken.wav"></audio>
+  <audio data-key="70" src="01_drumkit/sounds/hadoken.wav"></audio>
+  <audio data-key="71" src="01_drumkit/sounds/boom.wav"></audio>
+  <audio data-key="72" src="01_drumkit/sounds/tom.wav"></audio>
+
+</body>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster
+    <script src="JudeMcCulley/jquery-3.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>  -->
+    <script src="../JudeMcCulley/jquery-3.js"></script>
+    <script src="../JudeMcCulley/popper.js"></script>
+    <script src="../JudeMcCulley/bootstrap.js"></script>
+    <script src="../JudeMcCulley/holder.js"></script>
+    <script src=01_drumkit/drumkit_script.js></script>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="348" height="225" viewBox="0 0 348 225" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="17" style="font-weight:bold;font-size:17pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body></html>
+
+</html>
